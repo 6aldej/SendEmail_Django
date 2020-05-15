@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if sent %}
+    <h1><b>E-mail успешно отправлен!</b></h1>
+    <p>
+      "Письмо было успешно отправлено на адрес {{ form.cleaned_data.to }}.
+    </p>
+  {% else %}
+    <h2><b>Отправить сообщение по E-mail 📩</h2>
+    <form action="." method="post">
+      {{ form.as_p }}
+      {% csrf_token %}
+      <input type="submit" class="btn btn-primary" value="Отправить">
+    </form>
+  {% endif %}
+{% endblock %}
