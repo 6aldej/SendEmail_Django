@@ -6,3 +6,4 @@ Sending letters is realized with the help of Gmail. <br>
 If you use Gmail, you must also allow access on the page: https://myaccount.google.com/lesssecureapps <br>
 You also need to click on the link: https://accounts.google.com/DisplayUnlockCaptcha <br>
 <b>********************************************************</b>
+Note: this code is configured for deploy on Heroku. 
