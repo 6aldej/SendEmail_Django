@@ -25,7 +25,7 @@ def send_mes(request):
             to = [cd['to']]
             
             TASKS.append({"text": message, "timer": timer})
-            t = threading.Timer(timer, send_mail, args=(subject, message, 'gruffbarbecue@gmail.com', to))
+            t = threading.Timer(timer, send_mail, args=(subject, message, 'MY_GMAIL_ADDRESS', to))
             t.start()
 
             sent = True
