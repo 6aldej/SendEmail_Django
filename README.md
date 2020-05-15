@@ -5,5 +5,7 @@ The application is written using the Django 2.0.5 framework. <br>
 Sending letters is realized with the help of Gmail. <br>
 If you use Gmail, you must also allow access on the page: https://myaccount.google.com/lesssecureapps <br>
 You also need to click on the link: https://accounts.google.com/DisplayUnlockCaptcha <br>
-<b>********************************************************</b>
-Note: this code is configured for deploy on Heroku. 
+<b>********************************************************</b><br>
+Note:<br>
+<li>this code is configured for deploy on Heroku.</li> <br>
+<li>'mysite/settings.py/: in 'EMAIL_HOST_USER' enter your Gmail; in 'ALLOWED_HOSTS' enter your Heroku domain.</li> <br> <li>'sendmes/views.py/': in 't', enter your Gmail in the 'send_mail' function arguments.</li> <br>
